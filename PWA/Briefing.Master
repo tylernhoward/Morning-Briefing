@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Briefing.master.cs" Inherits="PWA.Briefing" %>
+<%@ Register Src="~/Controls/Header.ascx" TagName="Header" TagPrefix ="ucHead"%>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="Footer" TagPrefix ="ucFoot"%>
+<%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix ="ucBan"%>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header><ucHead:Header ID="Header" runat="server" /></header>
+    <ucBan:Banner ID="Banner" runat="server" />
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer><ucFoot:Footer ID="Footer" runat="server" /></footer>
+</body>
+</html>
