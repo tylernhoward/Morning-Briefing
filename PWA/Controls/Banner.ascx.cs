@@ -11,7 +11,13 @@ namespace PWA.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            String timeCat = "Morning";
+            String name = "Tyler";
+            String time = "12:02";
+            String location = "Baltimore, MD";
 
+            lblBan.Text = "Good " + timeCat + " " + name;
+            lblTime.Text = "The time is " + time + " in " + location;
         }
     }
 }

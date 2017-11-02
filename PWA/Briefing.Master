@@ -8,11 +8,14 @@
 
 <html>
 <head runat="server">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+	<div class= "container" >
     <header><ucHead:Header ID="Header" runat="server" /></header>
     <ucBan:Banner ID="Banner" runat="server" />
     <form id="form1" runat="server">
@@ -22,5 +25,6 @@
         </div>
     </form>
     <footer><ucFoot:Footer ID="Footer" runat="server" /></footer>
+	</div>
 </body>
 </html>

@@ -1,2 +1,34 @@
-﻿body {
+﻿.PrimaryNavigation {
+    
+    padding: 30px;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 24px;
+    position: relative; /* relative to the last element */
+    margin: auto auto;
+    line-height: 1.5em;
+    left: -40px;
+    top: -22px;
+}
+.PrimaryNavigation li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.PrimaryNavigation a {
+    color: #fff; /* text all channels = white*/
+    text-decoration: none; /* turn off underline */
+    font-weight: bold; /* bold the text */
+    background: blue;
+    margin: 0; /* no margin */
+    padding: 0.25em .65em;
+    border-left: 1px solid #000; /*border left side color black */
+    border-top: 1px solid #000; /*border top side color black */
+    border-right: 1px solid Lime;
+}
+
+
+body {
+    
 }
