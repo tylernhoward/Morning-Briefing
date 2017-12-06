@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="" title="Home"  description="">
-    <siteMapNode url="~/Pages/Weather.aspx" title="Weather"  description="" />
-    <siteMapNode url="~/Pages/News.aspx" title="News"  description="" />
-    <siteMapNode url="~/Pages/Tasks.aspx" title="Tasks"  description="" />
+    <siteMapNode id="weatherNav" url="~/Pages/Weather.aspx" title="Weather"  description="" />
+    <siteMapNode id="newsNav" url="~/Pages/News.aspx" title="News"  description="" />
+    <siteMapNode id="tasksNav" url="~/Pages/Tasks.aspx" title="Tasks"  description="" />
   </siteMapNode>
 </siteMap>

@@ -16,5 +16,7 @@ namespace PWA.Pages {
 		protected System.Web.UI.WebControls.Content Content1;
 		
 		protected System.Web.UI.WebControls.Content Content2;
+		
+		protected System.Web.UI.WebControls.Label lblNews;
 	}
 }

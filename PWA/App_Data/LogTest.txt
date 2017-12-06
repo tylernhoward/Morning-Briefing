@@ -1,0 +1,77 @@
+﻿[Header]\r\n2017-11-03 20:52:28,630 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-03 20:52:30,061 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-03 20:52:30,074 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-03 20:52:30,847 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-03 20:52:30,857 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Header]\r\n2017-11-03 21:31:38,703 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-03 21:31:39,206 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Header]\r\n2017-11-09 17:56:49,272 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Header]\r\n2017-11-28 18:36:06,322 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-28 19:06:40,679 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 
+[Footer]\r\n[Header]\r\n2017-11-28 20:36:57,711 [Threadpool worker] ERROR PWA.Pages.Register Register Error
+System.IO.FileNotFoundException: Could not find file "/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register"
+File name: '/Users/tylerhoward/Desktop/Morning-Briefing/PWA/Register'
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x00191] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:239 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:81 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at PWA.Pages.Register.Page_Load (System.Object sender, System.EventArgs e) [0x00008] in /Users/tylerhoward/Desktop/Morning-Briefing/PWA/Pages/Register.aspx.cs:22 

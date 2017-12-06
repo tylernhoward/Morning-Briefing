@@ -16,5 +16,19 @@ namespace PWA.Pages {
 		protected System.Web.UI.WebControls.Content Content1;
 		
 		protected System.Web.UI.WebControls.Content Content2;
+		
+		protected System.Web.UI.WebControls.TextBox txtFname;
+		
+		protected System.Web.UI.WebControls.TextBox txtLName;
+		
+		protected System.Web.UI.WebControls.TextBox txtAdd1;
+		
+		protected System.Web.UI.WebControls.TextBox txtCity;
+		
+		protected System.Web.UI.WebControls.TextBox txtState;
+		
+		protected System.Web.UI.WebControls.TextBox txtCountry;
+		
+		protected System.Web.UI.WebControls.Button SendCookie;
 	}
 }

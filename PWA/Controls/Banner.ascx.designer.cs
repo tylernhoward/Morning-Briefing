@@ -17,8 +17,6 @@ namespace PWA.Controls {
 		
 		protected System.Web.UI.WebControls.Label lblTime;
 		
-		protected System.Web.UI.WebControls.Image timeImage;
-		
 		protected PWA.Controls.Navigation Navigation;
 	}
 }

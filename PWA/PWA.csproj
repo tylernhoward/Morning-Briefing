@@ -64,6 +64,39 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="ZedGraph">
+      <HintPath>DLL\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web">
+      <HintPath>DLL\ZedGraph.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="BundleTransformer.Core">
+      <HintPath>..\packages\BundleTransformer.Core.1.9.160\lib\net40\BundleTransformer.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BundleTransformer.MicrosoftAjax">
+      <HintPath>..\packages\BundleTransformer.MicrosoftAjax.1.9.160\lib\net40\BundleTransformer.MicrosoftAjax.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Briefing.Master" />
@@ -91,6 +124,9 @@
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Controls\Clock.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\Day\styles.css" />
@@ -214,12 +250,36 @@
       <DependentUpon>Weather.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_GlobalResources\WebResources.Designer.cs">
+      <DependentUpon>WebResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\ExceptionUtility.cs" />
+    <Compile Include="App_Code\User.cs" />
+    <Compile Include="App_Code\Address.cs" />
+    <Compile Include="Controls\Clock.ascx.cs">
+      <DependentUpon>Clock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Clock.ascx.designer.cs">
+      <DependentUpon>Clock.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Themes\Day\images\" />
     <Folder Include="App_Themes\Dusk\images\" />
     <Folder Include="App_Themes\Morning\images\" />
     <Folder Include="App_Themes\Night\images\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="App_Code\" />
+    <Folder Include="App_LocalResources\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="DLL\" />
+    <Folder Include="ZedGraphImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\WebResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WebResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

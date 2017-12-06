@@ -12,7 +12,7 @@ namespace PWA.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             String name = "Tyler";
-            lblHead.Text = "Welcome " + name;
+            lblHead.Text = lblHead.Text + name;
         }
     }
 }

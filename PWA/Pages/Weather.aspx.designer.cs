@@ -16,5 +16,27 @@ namespace PWA.Pages {
 		protected System.Web.UI.WebControls.Content Content1;
 		
 		protected System.Web.UI.WebControls.Content Content2;
+		
+		protected System.Web.UI.WebControls.TextBox txtCity;
+		
+		protected System.Web.UI.HtmlControls.HtmlTable tblWeather;
+		
+		protected System.Web.UI.WebControls.Image imgWeatherIcon;
+		
+		protected System.Web.UI.WebControls.Label lblCity_Country;
+		
+		protected System.Web.UI.WebControls.Image imgCountryFlag;
+		
+		protected System.Web.UI.WebControls.Label lblDescription;
+		
+		protected System.Web.UI.WebControls.Label lblHumidity;
+		
+		protected System.Web.UI.WebControls.Label lblTempMin;
+		
+		protected System.Web.UI.WebControls.Label lblTempMax;
+		
+		protected System.Web.UI.WebControls.Label lblTempDay;
+		
+		protected System.Web.UI.WebControls.Label lblTempNight;
 	}
 }

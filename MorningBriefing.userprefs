@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{DE2F586D-216C-4387-A9F3-99D79FE2DF62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PWA/Controls/Navigation.ascx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PWA/Controls/MiniWeather.ascx">
     <Files>
-      <File FileName="PWA/App_Themes/Day/styles.css" Line="2" Column="5" />
-      <File FileName="PWA/Web.sitemap" Line="1" Column="1" />
-      <File FileName="PWA/Default.aspx" Line="1" Column="1" />
-      <File FileName="PWA/Controls/Navigation.ascx" Line="2" Column="33" />
-      <File FileName="PWA/Briefing.Master" Line="20" Column="46" />
-      <File FileName="PWA/Controls/Banner.ascx" Line="8" Column="55" />
-      <File FileName="PWA/Controls/Header.ascx" Line="1" Column="1" />
-      <File FileName="PWA/Controls/Navigation.ascx.cs" Line="1" Column="1" />
-      <File FileName="PWA/Controls/Footer.ascx" Line="1" Column="1" />
+      <File FileName="PWA/Pages/Tasks.aspx" Line="85" Column="75" />
+      <File FileName="PWA/Pages/News.aspx" Line="7" Column="1" />
+      <File FileName="PWA/Controls/MiniNews.ascx" Line="1" Column="1" />
+      <File FileName="PWA/Controls/MiniTasks.ascx" Line="1" Column="1" />
+      <File FileName="PWA/Controls/MiniWeather.ascx" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

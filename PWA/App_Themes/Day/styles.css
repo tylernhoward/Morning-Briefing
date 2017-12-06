@@ -20,12 +20,12 @@
     color: #fff; /* text all channels = white*/
     text-decoration: none; /* turn off underline */
     font-weight: bold; /* bold the text */
-    background: blue;
+    background: navy;
     margin: 0; /* no margin */
     padding: 0.25em .65em;
     border-left: 1px solid #000; /*border left side color black */
     border-top: 1px solid #000; /*border top side color black */
-    border-right: 1px solid Lime;
+    border-right: 1px solid white;
 }
 
 

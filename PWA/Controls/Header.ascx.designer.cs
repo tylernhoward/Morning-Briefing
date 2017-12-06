@@ -9,10 +9,10 @@
 //------------------------------------------------------------------------------
 
 namespace PWA.Controls {
-	
-	
-	public partial class Header {
-		
-		protected System.Web.UI.WebControls.Label lblHead;
-	}
+    
+    
+    public partial class Header {
+        
+        protected System.Web.UI.WebControls.Label lblHead;
+    }
 }
