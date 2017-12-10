@@ -110,12 +110,8 @@
     <Content Include="Controls\Banner.ascx" />
     <Content Include="Controls\Footer.ascx" />
     <Content Include="Controls\Header.ascx" />
-    <Content Include="Controls\MiniNews.ascx" />
-    <Content Include="Controls\MiniTasks.ascx" />
-    <Content Include="Controls\MiniWeather.ascx" />
     <Content Include="Controls\Navigation.ascx" />
     <Content Include="Pages\Login.aspx" />
-    <Content Include="Pages\Manager.aspx" />
     <Content Include="Pages\News.aspx" />
     <Content Include="Pages\Profile.aspx" />
     <Content Include="Pages\Register.aspx" />
@@ -127,12 +123,16 @@
     <Content Include="Scripts\MicrosoftAjax.js" />
     <Content Include="Scripts\MicrosoftAjax.debug.js" />
     <Content Include="Controls\Clock.ascx" />
+    <Content Include="App_Themes\Summer\images\bg.jpg" />
+    <Content Include="App_Themes\Spring\images\bg.jpg" />
+    <Content Include="App_Themes\Fall\images\bg.jpg" />
+    <Content Include="App_Themes\Winter\images\bg.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\Day\styles.css" />
-    <Content Include="App_Themes\Dusk\styles.css" />
-    <Content Include="App_Themes\Morning\styles.css" />
-    <Content Include="App_Themes\Night\styles.css" />
+    <Content Include="App_Themes\Summer\styles.css" />
+    <Content Include="App_Themes\Fall\styles.css" />
+    <Content Include="App_Themes\Spring\styles.css" />
+    <Content Include="App_Themes\Winter\styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -165,27 +165,6 @@
     <Compile Include="Controls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MiniNews.ascx.cs">
-      <DependentUpon>MiniNews.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\MiniNews.ascx.designer.cs">
-      <DependentUpon>MiniNews.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MiniTasks.ascx.cs">
-      <DependentUpon>MiniTasks.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\MiniTasks.ascx.designer.cs">
-      <DependentUpon>MiniTasks.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MiniWeather.ascx.cs">
-      <DependentUpon>MiniWeather.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\MiniWeather.ascx.designer.cs">
-      <DependentUpon>MiniWeather.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Navigation.ascx.cs">
       <DependentUpon>Navigation.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -206,13 +185,6 @@
     </Compile>
     <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Manager.aspx.cs">
-      <DependentUpon>Manager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Manager.aspx.designer.cs">
-      <DependentUpon>Manager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
@@ -264,10 +236,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Themes\Day\images\" />
-    <Folder Include="App_Themes\Dusk\images\" />
-    <Folder Include="App_Themes\Morning\images\" />
-    <Folder Include="App_Themes\Night\images\" />
+    <Folder Include="App_Themes\Summer\images\" />
+    <Folder Include="App_Themes\Fall\images\" />
+    <Folder Include="App_Themes\Spring\images\" />
+    <Folder Include="App_Themes\Winter\images\" />
     <Folder Include="App_GlobalResources\" />
     <Folder Include="App_Code\" />
     <Folder Include="App_LocalResources\" />

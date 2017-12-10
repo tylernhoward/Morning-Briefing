@@ -7,6 +7,9 @@
 
 	<script>
     $(document).ready(function () {
+		$(this).prop('contenteditable', false);
+        $(this).find('input').prop('disabled', true)
+        $(this).find('select').prop('disabled', true)
                 $('.editbtn').click(function () {
                     var currentTD = $(this).parents('tr').find('td');
                     if ($(this).html() == 'Edit') {
@@ -14,18 +17,20 @@
                         $.each(currentTD, function () {
                             $(this).prop('contenteditable', true);
 		                    $(this).find('input').prop('disabled', false)
+		                    $(this).find('select').prop('disabled', false)
                         });
                     } else {
                         $('button').prop('disabled',false);
                         $.each(currentTD, function () {
                             $(this).prop('contenteditable', false);
 		                    $(this).find('input').prop('disabled', true)
+		                    $(this).find('select').prop('disabled', true)
                         });
                     }
                     
                     $('.editbtn').prop('disabled',false);
 
-                    $('.id').prop('contenteditable', false);
+                    $('.notEditable').prop('contenteditable', false);
                     $('.actions').prop('contenteditable', false);
                     $(this).html($(this).html() == 'Edit' ? 'Done' : 'Edit')
                 });
@@ -51,7 +56,7 @@
                 });
     });
 </script>
-	<div id = "bands">
+	<div id = "todos">
             <table class="table table-striped table-bordered table-hover">
                 <h3  class="text-center">Todos</h3>
                 <tbody>
@@ -59,14 +64,24 @@
                         <th>Date</th>
                         <th>Todo</th>
                         <th>Content</th>
+					    <th>Category</th>
                         <th>Complete</th>
                         <th>Actions</th>
                     </tr>
                    
                         <tr>
-                            <td class="edit id">
+                            <td class="edit notEditable">
                                 <p>12/25/17
                                 </p>
+                            </td>
+					        <td class="edit notEditable" >
+                                <select>
+                                    <option value="personal">Personal</option>
+							        <option value="homework">Homework</option>
+							        <option value="work">Work</option>
+							        <option value="other">Other</option>
+							   
+						        </select>
                             </td>
                             <td class="edit">
                                 <p>Get Milk
@@ -76,7 +91,7 @@
                                 <p>Make sure it is 2%
                                 </p>
                             </td>
-                            <td class="edit">
+                            <td class="edit notEditable">
                                 <input id="checkBox" type="checkbox">
                             </td>
                             <td class="actions">
@@ -85,9 +100,13 @@
                                 <a class="btn btn-outline-danger" href="" onclick="return confirm('Are you sure?');">Delete</a>
                             </td>
                         </tr>
+				
                 </tbody>
             </table>
-            </div>
+         </div>
+
+
+	
 	<p class="text-center">Task Stats</p>
 	<div class="row justify-content-center">
             <cc1:ZedGraphWeb ID="ZedGraphWeb1" runat="server" OnRenderGraph="ZedGraphWeb1_RenderGraph"></cc1:ZedGraphWeb>

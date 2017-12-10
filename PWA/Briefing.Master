@@ -2,7 +2,7 @@
 <%@ Register Src="~/Controls/Header.ascx" TagName="Header" TagPrefix ="ucHead"%>
 <%@ Register Src="~/Controls/Footer.ascx" TagName="Footer" TagPrefix ="ucFoot"%>
 <%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix ="ucBan"%>
-
+    
 
 <!DOCTYPE html>
 
@@ -18,15 +18,18 @@
 </head>
 <body>
 	<div class= "container" >
-    <header><ucHead:Header ID="Header" runat="server" /></header>
-    <ucBan:Banner ID="Banner" runat="server" />
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
-    <footer><ucFoot:Footer ID="Footer" runat="server" /></footer>
+		<div class= "jumbotron"> 
+            
+            <form id="form1" runat="server">
+                <div>
+                    <header><ucHead:Header ID="Header" runat="server" /></header>
+                    <ucBan:Banner ID="Banner" runat="server" />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+            <footer><ucFoot:Footer ID="Footer" runat="server" /></footer>
+		</div>
 	</div>
 </body>
 </html>

@@ -16,11 +16,5 @@ namespace PWA {
 		protected System.Web.UI.WebControls.Content Content1;
 		
 		protected System.Web.UI.WebControls.Content Content2;
-		
-		protected System.Web.UI.UserControl Weather;
-		
-		protected System.Web.UI.UserControl News;
-		
-		protected System.Web.UI.UserControl Tasks;
 	}
 }

@@ -11,13 +11,25 @@ namespace PWA.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            String timeCat = "Morning";
+            String timeCat;
             String name = "Tyler";
-            String time = "00:00";
-
             String location = "Baltimore, MD";
+
+            int currenthour = DateTime.Now.Hour;
+            if(currenthour < 12 && currenthour > 3){
+                timeCat = "Morning";
+            }
+            else if (currenthour >= 12 && currenthour < 20){
+                timeCat = "Afternoon";
+            }
+            else{
+                timeCat = "Night";
+            }
+
+
             lblBan.Text = "Good " + timeCat + " " + name;
-            lblTime.Text = "The time is " + time + " in " + location;
+            lblTime.Text = "The time is ";
+            lblLocation.Text = " in " + location;
          }
     }
 }

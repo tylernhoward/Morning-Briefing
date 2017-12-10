@@ -9,120 +9,100 @@
 //------------------------------------------------------------------------------
 
 namespace PWA.Pages {
-    
-    
-    public partial class Register {
-        
-        protected System.Web.UI.WebControls.Content Content1;
-        
-        protected System.Web.UI.WebControls.Content Content2;
-        
-        protected System.Web.UI.WebControls.Panel PersonalDetails;
-        
-        protected System.Web.UI.WebControls.Label lblGender;
-        
-        protected System.Web.UI.WebControls.RadioButtonList rblGender;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valGenderReq;
-        
-        protected System.Web.UI.WebControls.Label lblFirstName;
-        
-        protected System.Web.UI.WebControls.TextBox txtFirstName;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valFirstNameRequired;
-        
-        protected System.Web.UI.WebControls.Label lblLastName;
-        
-        protected System.Web.UI.WebControls.TextBox txtLastName;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valLastNameRequired;
-        
-        protected System.Web.UI.WebControls.Label lblDOB;
-        
-        protected System.Web.UI.WebControls.TextBox txtDOB;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valDOBRequired;
-        
-        protected System.Web.UI.WebControls.RegularExpressionValidator valRegExDate;
-        
-        protected System.Web.UI.WebControls.Label lblEmail;
-        
-        protected System.Web.UI.WebControls.TextBox txtEmail;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valEmailRequired;
-        
-        protected System.Web.UI.WebControls.RegularExpressionValidator valRegExEmail;
-        
-        protected System.Web.UI.WebControls.Panel CompanyDetails;
-        
-        protected System.Web.UI.WebControls.Label lblCompany;
-        
-        protected System.Web.UI.WebControls.TextBox txtCompany;
-        
-        protected System.Web.UI.WebControls.Panel AddressDetails;
-        
-        protected System.Web.UI.WebControls.Label lblAddress;
-        
-        protected System.Web.UI.WebControls.TextBox txtAddress;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valAddressRequired;
-        
-        protected System.Web.UI.WebControls.Label lblSuburb;
-        
-        protected System.Web.UI.WebControls.TextBox txtSuburb;
-        
-        protected System.Web.UI.WebControls.Label lblZip;
-        
-        protected System.Web.UI.WebControls.TextBox txtZip;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valZipRequired;
-        
-        protected System.Web.UI.WebControls.RegularExpressionValidator valRegExZip;
-        
-        protected System.Web.UI.WebControls.Label lblCity;
-        
-        protected System.Web.UI.WebControls.TextBox txtCity;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valCityRequired;
-        
-        protected System.Web.UI.WebControls.Label lblCountry;
-        
-        protected System.Web.UI.WebControls.DropDownList ddCountry;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valCountryReq;
-        
-        protected System.Web.UI.WebControls.Panel ContactDetails;
-        
-        protected System.Web.UI.WebControls.Label lblPhone;
-        
-        protected System.Web.UI.WebControls.TextBox txtPhone;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valPhoneRequired;
-        
-        protected System.Web.UI.WebControls.RegularExpressionValidator valRegExPhone;
-        
-        protected System.Web.UI.WebControls.Label lblFax;
-        
-        protected System.Web.UI.WebControls.TextBox txtFax;
-        
-        protected System.Web.UI.WebControls.Panel PasswordDetails;
-        
-        protected System.Web.UI.WebControls.Label lblPass;
-        
-        protected System.Web.UI.WebControls.TextBox txtPass;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valPassRequired;
-        
-        protected System.Web.UI.WebControls.Label lblPassRe;
-        
-        protected System.Web.UI.WebControls.TextBox txtPassRe;
-        
-        protected System.Web.UI.WebControls.RequiredFieldValidator valPassReRequired;
-        
-        protected System.Web.UI.WebControls.CompareValidator valCompare;
-        
-        protected System.Web.UI.WebControls.RegularExpressionValidator valRegExPass;
-        
-        protected System.Web.UI.WebControls.Button registerBtn;
-    }
+	
+	
+	public partial class Register {
+		
+		protected System.Web.UI.WebControls.Content Content1;
+		
+		protected System.Web.UI.WebControls.Content Content2;
+		
+		protected System.Web.UI.WebControls.Panel PersonalDetails;
+		
+		protected System.Web.UI.WebControls.Label lblGender;
+		
+		protected System.Web.UI.WebControls.RadioButtonList rblGender;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valGenderReq;
+		
+		protected System.Web.UI.WebControls.Label lblFirstName;
+		
+		protected System.Web.UI.WebControls.TextBox txtFirstName;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valFirstNameRequired;
+		
+		protected System.Web.UI.WebControls.Label lblLastName;
+		
+		protected System.Web.UI.WebControls.TextBox txtLastName;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valLastNameRequired;
+		
+		protected System.Web.UI.WebControls.Label lblDOB;
+		
+		protected System.Web.UI.WebControls.TextBox txtDOB;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valDOBRequired;
+		
+		protected System.Web.UI.WebControls.RegularExpressionValidator valRegExDate;
+		
+		protected System.Web.UI.WebControls.Label lblEmail;
+		
+		protected System.Web.UI.WebControls.TextBox txtEmail;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valEmailRequired;
+		
+		protected System.Web.UI.WebControls.RegularExpressionValidator valRegExEmail;
+		
+		protected System.Web.UI.WebControls.Panel PasswordDetails;
+		
+		protected System.Web.UI.WebControls.Label lblPass;
+		
+		protected System.Web.UI.WebControls.TextBox txtPass;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valPassRequired;
+		
+		protected System.Web.UI.WebControls.Label lblPassRe;
+		
+		protected System.Web.UI.WebControls.TextBox txtPassRe;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valPassReRequired;
+		
+		protected System.Web.UI.WebControls.CompareValidator valCompare;
+		
+		protected System.Web.UI.WebControls.RegularExpressionValidator valRegExPass;
+		
+		protected System.Web.UI.WebControls.Panel AddressDetails;
+		
+		protected System.Web.UI.WebControls.Label lblAddress;
+		
+		protected System.Web.UI.WebControls.TextBox txtAddress;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valAddressRequired;
+		
+		protected System.Web.UI.WebControls.Label lblSuburb;
+		
+		protected System.Web.UI.WebControls.TextBox txtSuburb;
+		
+		protected System.Web.UI.WebControls.Label lblZip;
+		
+		protected System.Web.UI.WebControls.TextBox txtZip;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valZipRequired;
+		
+		protected System.Web.UI.WebControls.RegularExpressionValidator valRegExZip;
+		
+		protected System.Web.UI.WebControls.Label lblCity;
+		
+		protected System.Web.UI.WebControls.TextBox txtCity;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valCityRequired;
+		
+		protected System.Web.UI.WebControls.Label lblCountry;
+		
+		protected System.Web.UI.WebControls.DropDownList ddCountry;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator valCountryReq;
+		
+		protected System.Web.UI.WebControls.Button registerBtn;
+	}
 }

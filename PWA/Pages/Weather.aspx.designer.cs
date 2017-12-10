@@ -17,9 +17,7 @@ namespace PWA.Pages {
 		
 		protected System.Web.UI.WebControls.Content Content2;
 		
-		protected System.Web.UI.WebControls.TextBox txtCity;
-		
-		protected System.Web.UI.HtmlControls.HtmlTable tblWeather;
+		protected System.Web.UI.HtmlControls.HtmlGenericControl tblWeather;
 		
 		protected System.Web.UI.WebControls.Image imgWeatherIcon;
 		
@@ -29,8 +27,6 @@ namespace PWA.Pages {
 		
 		protected System.Web.UI.WebControls.Label lblDescription;
 		
-		protected System.Web.UI.WebControls.Label lblHumidity;
-		
 		protected System.Web.UI.WebControls.Label lblTempMin;
 		
 		protected System.Web.UI.WebControls.Label lblTempMax;
@@ -38,5 +34,7 @@ namespace PWA.Pages {
 		protected System.Web.UI.WebControls.Label lblTempDay;
 		
 		protected System.Web.UI.WebControls.Label lblTempNight;
+		
+		protected System.Web.UI.WebControls.TextBox txtCity;
 	}
 }

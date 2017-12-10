@@ -9,14 +9,28 @@
 //------------------------------------------------------------------------------
 
 namespace PWA.Pages {
-	
-	
-	public partial class Login {
-		
-		protected System.Web.UI.WebControls.Content Content1;
-		
-		protected System.Web.UI.WebControls.Content Content2;
-		
-		protected System.Web.UI.WebControls.Button loginBtn;
-	}
+    
+    
+    public partial class Login {
+        
+        protected System.Web.UI.WebControls.Content Content1;
+        
+        protected System.Web.UI.WebControls.Content Content2;
+        
+        protected System.Web.UI.WebControls.Panel LoginDetails;
+        
+        protected System.Web.UI.WebControls.Label lblUser;
+        
+        protected System.Web.UI.WebControls.TextBox txtUser;
+        
+        protected System.Web.UI.WebControls.RequiredFieldValidator userLogRequired;
+        
+        protected System.Web.UI.WebControls.Label lblPassword;
+        
+        protected System.Web.UI.WebControls.TextBox txtPassword;
+        
+        protected System.Web.UI.WebControls.RequiredFieldValidator passLogRequired;
+        
+        protected System.Web.UI.WebControls.Button loginBtn;
+    }
 }

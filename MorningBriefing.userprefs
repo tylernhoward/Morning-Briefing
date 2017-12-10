@@ -1,11 +1,38 @@
 ﻿<Properties StartupConfiguration="{DE2F586D-216C-4387-A9F3-99D79FE2DF62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PWA/Controls/MiniWeather.ascx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PWA/Pages/Login.aspx">
     <Files>
-      <File FileName="PWA/Pages/Tasks.aspx" Line="85" Column="75" />
-      <File FileName="PWA/Pages/News.aspx" Line="7" Column="1" />
+      <File FileName="PWA/Pages/Tasks.aspx" Line="94" Column="57" />
+      <File FileName="PWA/Pages/News.aspx" Line="18" Column="61" />
       <File FileName="PWA/Controls/MiniNews.ascx" Line="1" Column="1" />
       <File FileName="PWA/Controls/MiniTasks.ascx" Line="1" Column="1" />
-      <File FileName="PWA/Controls/MiniWeather.ascx" Line="1" Column="1" />
+      <File FileName="PWA/Controls/MiniWeather.ascx" Line="7" Column="1" />
+      <File FileName="PWA/Default.aspx" Line="7" Column="2" />
+      <File FileName="PWA/Pages/Register.aspx" Line="155" Column="59" />
+      <File FileName="PWA/App_Themes/Fall/styles.css" Line="36" Column="14" />
+      <File FileName="PWA/App_Themes/Winter/styles.css" Line="36" Column="2" />
+      <File FileName="PWA/App_Themes/Summer/styles.css" Line="31" Column="12" />
+      <File FileName="PWA/App_Themes/Spring/styles.css" Line="37" Column="2" />
+      <File FileName="PWA/Web.config" Line="29" Column="25" />
+      <File FileName="PWA/Briefing.Master" Line="26" Column="64" />
+      <File FileName="PWA/Controls/Header.ascx" Line="3" Column="43" />
+      <File FileName="PWA/Controls/Header.ascx.cs" Line="14" Column="13" />
+      <File FileName="PWA/Controls/Clock.ascx" Line="13" Column="3" />
+      <File FileName="PWA/Controls/Banner.ascx" Line="10" Column="53" />
+      <File FileName="PWA/Controls/Clock.ascx.cs" Line="13" Column="63" />
+      <File FileName="PWA/Pages/Weather.aspx" Line="8" Column="35" />
+      <File FileName="PWA/Pages/Manager.aspx" Line="1" Column="1" />
+      <File FileName="PWA/Pages/Profile.aspx" Line="18" Column="74" />
+      <File FileName="PWA/Pages/Profile.aspx.cs" Line="1" Column="1" />
+      <File FileName="PWA/Pages/Login.aspx.cs" Line="1" Column="1" />
+      <File FileName="PWA/Pages/Login.aspx" Line="5" Column="1" />
+      <File FileName="PWA/Pages/Weather.aspx.cs" Line="49" Column="45" />
+      <File FileName="PWA/Pages/News.aspx.cs" Line="28" Column="56" />
+      <File FileName="PWA/Pages/News.aspx.designer.cs" Line="25" Column="1" />
+      <File FileName="PWA/Controls/Navigation.ascx" Line="17" Column="1" />
+      <File FileName="PWA/Controls/Banner.ascx.cs" Line="26" Column="33" />
+      <File FileName="PWA/Controls/Banner.ascx.designer.cs" Line="27" Column="1" />
+      <File FileName="PWA/Controls/Footer.ascx" Line="1" Column="1" />
+      <File FileName="PWA/Pages/Login.aspx.designer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

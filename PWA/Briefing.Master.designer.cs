@@ -15,11 +15,11 @@ namespace PWA {
 		
 		protected System.Web.UI.WebControls.ContentPlaceHolder head;
 		
+		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		
 		protected PWA.Controls.Header Header;
 		
 		protected PWA.Controls.Banner Banner;
-		
-		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
 		protected System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
 		

@@ -9,14 +9,18 @@
 //------------------------------------------------------------------------------
 
 namespace PWA.Controls {
-	
-	
-	public partial class Banner {
-		
-		protected System.Web.UI.WebControls.Label lblBan;
-		
-		protected System.Web.UI.WebControls.Label lblTime;
-		
-		protected PWA.Controls.Navigation Navigation;
-	}
+    
+    
+    public partial class Banner {
+        
+        protected System.Web.UI.WebControls.Label lblBan;
+        
+        protected System.Web.UI.WebControls.Label lblTime;
+        
+        protected PWA.Controls.Clock clock;
+        
+        protected System.Web.UI.WebControls.Label lblLocation;
+        
+        protected PWA.Controls.Navigation Navigation;
+    }
 }

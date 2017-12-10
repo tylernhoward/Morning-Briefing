@@ -15,7 +15,7 @@
                 <p style="margin:5px;">Country</p>
     		</div>
     		<div class="col-md-4">
-                 <asp:TextBox ID="txtFname" runat="server"></asp:TextBox><br>
+                 <asp:TextBox ID="txtFname" runat="server"></asp:TextBox>
                  <asp:TextBox ID="txtLName" runat="server"></asp:TextBox>
                  <asp:TextBox ID="txtAdd1" runat="server"></asp:TextBox>
                  <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>

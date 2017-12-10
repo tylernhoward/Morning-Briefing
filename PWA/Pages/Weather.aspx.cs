@@ -13,12 +13,18 @@ namespace PWA.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string appId = "1ec5b199f1f815683e6d04853db61361";
+            string url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&units=imperial&cnt=1&APPID={1}", "Baltimore", appId);
+            CallWeatherService(appId,url);
         }
+
         protected void GetWeatherInfo(object sender, EventArgs e)
         {
             string appId = "1ec5b199f1f815683e6d04853db61361";
             string url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&units=imperial&cnt=1&APPID={1}", txtCity.Text.Trim(), appId);
+            CallWeatherService(appId,url);
+        }
+        private void CallWeatherService(string appId, string url){
             using (WebClient client = new WebClient())
             {
                 string json = client.DownloadString(url);
@@ -32,7 +38,6 @@ namespace PWA.Pages
                 lblTempMax.Text = string.Format("{0} F", Math.Round(weatherInfo.list[0].temp.max, 1));
                 lblTempDay.Text = string.Format("{0} F", Math.Round(weatherInfo.list[0].temp.day, 1));
                 lblTempNight.Text = string.Format("{0} F", Math.Round(weatherInfo.list[0].temp.night, 1));
-                lblHumidity.Text = weatherInfo.list[0].humidity.ToString();
                 tblWeather.Visible = true;
 
             }

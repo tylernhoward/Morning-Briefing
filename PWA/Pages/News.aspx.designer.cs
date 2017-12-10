@@ -9,14 +9,16 @@
 //------------------------------------------------------------------------------
 
 namespace PWA.Pages {
-	
-	
-	public partial class News {
-		
-		protected System.Web.UI.WebControls.Content Content1;
-		
-		protected System.Web.UI.WebControls.Content Content2;
-		
-		protected System.Web.UI.WebControls.Label lblNews;
-	}
+    
+    
+    public partial class News {
+        
+        protected System.Web.UI.WebControls.Content Content1;
+        
+        protected System.Web.UI.WebControls.Content Content2;
+        
+        protected System.Web.UI.WebControls.ListView newsList;
+        
+        protected System.Web.UI.WebControls.PlaceHolder itemPlaceholder;
+    }
 }

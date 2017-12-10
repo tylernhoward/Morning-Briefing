@@ -11,8 +11,7 @@ namespace PWA.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            String name = "Tyler";
-            lblHead.Text = lblHead.Text + name;
+            
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Briefing.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="PWA.Pages.Register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-        <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <asp:Panel style="clear:both; margin: 10px; background-color: whitesmoke;" ID="PersonalDetails" runat="server" GroupingText="Personal Info" Width="800px">
+ 
+ <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+	<div class="row justify-content-center">
+        <asp:Panel style="clear:both; margin: 10px; " ID="PersonalDetails" runat="server" GroupingText="Personal Info">
          <table>
 			<tr>
                <td><asp:Label ID="lblGender" style="color:Black" Text="Gender:" runat="server" /></td>
@@ -67,17 +69,50 @@
                </td>
             </tr>
 		</table>
-        </asp:Panel>
-		<asp:Panel style="clear:both; margin: 10px; background-color: whitesmoke;" ID="CompanyDetails" runat="server" GroupingText="Company Details" Width="800px">
+			<hr>
+		</asp:Panel>
+	</div>
+	<div class="row justify-content-center">
+	<asp:Panel style="clear:both; margin: 10px;" ID="PasswordDetails" runat="server" GroupingText="Password Details" >
          <table>
-			<tr>
-               <td><asp:Label ID="lblCompany" style="color:Black" 
-               Text="Company Name: " runat="server" /></td>
-               <td><asp:TextBox ID="txtCompany" runat="server" /></td>
+            <tr>
+               <td><asp:Label ID="lblPass" style="color:Black" 
+               Text="Password: " runat="server" /></td>
+               <td><asp:TextBox ID="txtPass" runat="server" TextMode="Password"/></td>
+                <td><asp:RequiredFieldValidator id="valPassRequired" runat="server" 
+                     ControlToValidate="txtPass"
+                     ErrorMessage="* You must fill in this field" Display="dynamic" />
+               </td>
+                <td></td>
             </tr>
-		</table>
+            <tr>
+               <td><asp:Label ID="lblPassRe" style="color:Black" 
+               Text="Confirm Password: " runat="server" /></td>
+               <td><asp:TextBox ID="txtPassRe" runat="server" TextMode="Password"/></td>
+                <td><asp:RequiredFieldValidator id="valPassReRequired" runat="server" 
+                     ControlToValidate="txtPassRe"
+                     ErrorMessage="* You must fill in this field" Display="dynamic" />
+               </td>
+            </tr>
+            <asp:CompareValidator id="valCompare" runat="server"
+                    ControlToValidate="txtPass" ControlToCompare="txtPassRe"
+                    Operator="Equal"
+                    Type="String"
+                    ErrorMessage="* The passwords must match!"
+                    Display="dynamic">
+                </asp:CompareValidator>
+            <asp:RegularExpressionValidator id="valRegExPass" runat="server"
+                     ControlToValidate="txtPass"
+                     ValidationExpression=".{8,}"
+                     ErrorMessage="* Password must be longer than 8 characters"
+                     display="dynamic">
+            </asp:RegularExpressionValidator>
+         </table>
+			<hr>
         </asp:Panel>
-        <asp:Panel style="clear:both; margin: 10px; background-color: whitesmoke;" ID="AddressDetails" runat="server" GroupingText="Location Details" Width="800px">
+		</div>
+       <div class="row justify-content-center">
+        <asp:Panel style="clear:both; margin: 10px;" ID="AddressDetails" runat="server" GroupingText="Location Details">
          <table>
 			<tr>
                <td><asp:Label ID="lblAddress" style="color:Black" 
@@ -124,7 +159,7 @@
                     <asp:ListItem Enabled="true" Text="Select Country" Value="-1"></asp:ListItem>
                     <asp:ListItem Text="United States" Value="usa"></asp:ListItem>
                     <asp:ListItem Text="Spain" Value="esp"></asp:ListItem>
-                    <asp:ListItem Text="Russia" Value="rus"></asp:ListItem>
+                    <asp:ListItem Text="Germany" Value="de"></asp:ListItem>
                 </asp:DropDownList>
 				</td>
 				<td><asp:RequiredFieldValidator ID="valCountryReq" runat="server" 
@@ -134,66 +169,10 @@
 				</td>
 			</tr>
 		</table>
+		<hr>
         </asp:Panel>
-		 <asp:Panel style="clear:both; margin: 10px; background-color: whitesmoke;" ID="ContactDetails" runat="server" GroupingText="Contact Info" Width="800px">
-         <table>
-			<tr>
-               <td><asp:Label ID="lblPhone" style="color:Black" 
-               Text="Phone Number: " runat="server" /></td>
-               <td><asp:TextBox ID="txtPhone" runat="server" /></td>
-				<td><asp:RequiredFieldValidator id="valPhoneRequired" runat="server" 
-                     ControlToValidate="txtPhone"
-                     ErrorMessage="* You must enter a valid phone number" Display="dynamic" />
-               <asp:RegularExpressionValidator id="valRegExPhone" runat="server"
-                    ControlToValidate="txtPhone"
-                    ValidationExpression="\d{10}"
-                    ErrorMessage="* Phone Number must be 10 numeric digits."
-                    display="dynamic">
-                </asp:RegularExpressionValidator>
-				</td>
-            </tr>
-            <tr>
-               <td><asp:Label ID="lblFax" style="color:Black" 
-               Text="Fax Number: " runat="server" /></td>
-               <td><asp:TextBox ID="txtFax" runat="server" /></td>
-            </tr>
-		</table>
-        </asp:Panel>
-	     <asp:Panel style="clear:both; margin: 10px; background-color: whitesmoke;" ID="PasswordDetails" runat="server" GroupingText="Password Details" Width="800px">
-         <table>
-            <tr>
-               <td><asp:Label ID="lblPass" style="color:Black" 
-               Text="Password: " runat="server" /></td>
-               <td><asp:TextBox ID="txtPass" runat="server" TextMode="Password"/></td>
-				<td><asp:RequiredFieldValidator id="valPassRequired" runat="server" 
-                     ControlToValidate="txtPass"
-                     ErrorMessage="* You must fill in this field" Display="dynamic" />
-               </td>
-			    <td></td>
-            </tr>
-            <tr>
-               <td><asp:Label ID="lblPassRe" style="color:Black" 
-               Text="Confirm Password: " runat="server" /></td>
-               <td><asp:TextBox ID="txtPassRe" runat="server" TextMode="Password"/></td>
-				<td><asp:RequiredFieldValidator id="valPassReRequired" runat="server" 
-                     ControlToValidate="txtPassRe"
-                     ErrorMessage="* You must fill in this field" Display="dynamic" />
-               </td>
-            </tr>
-			<asp:CompareValidator id="valCompare" runat="server"
-                    ControlToValidate="txtPass" ControlToCompare="txtPassRe"
-                    Operator="Equal"
-                    Type="String"
-                    ErrorMessage="* The passwords must match!"
-                    Display="dynamic">
-                </asp:CompareValidator>
-			<asp:RegularExpressionValidator id="valRegExPass" runat="server"
-                     ControlToValidate="txtPass"
-                     ValidationExpression=".{8,}"
-                     ErrorMessage="* Password must be longer than 8 characters"
-                     display="dynamic">
-            </asp:RegularExpressionValidator>
-         </table>
-        </asp:Panel>
-        <asp:Button Text="Register" ID="registerBtn" OnClick="Submit_Click" runat="server" />
+	</div>
+		
+	     
+        <asp:Button Text="Register" ID="registerBtn" OnClick="Submit_Click" CssClass="row mx-auto" runat="server" />
 </asp:Content>
