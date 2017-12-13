@@ -17,7 +17,7 @@
                 <tr>
                    <td><asp:Label ID="lblPassword" style="color:Black" 
                    Text="Password: " runat="server" /></td>
-                   <td><asp:TextBox ID="txtPassword" runat="server" /></td>
+                   <td><asp:TextBox ID="txtPassword" runat="server" TextMode="Password" /></td>
                     <td><asp:RequiredFieldValidator id="passLogRequired" runat="server" 
                          ControlToValidate="txtPassword"
                          ErrorMessage="* Fill this out!" Display="dynamic" />
@@ -25,9 +25,15 @@
                 </tr>
             </table>
             </asp:Panel>
-    		
+            <asp:GridView ID="GridView1" runat="server">
+
+            </asp:GridView>
+
 	    </div>
-	    <asp:Button Text="Login" ID="loginBtn" OnClick="Page_Load" CssClass="row mx-auto" runat="server" />
+        <div class ="text-center row mx-auto justify-content-center">
+        <asp:Button Text="Login" ID="loginBtn" OnClick="Submit_Click" CssClass="btn btn-success" runat="server" />
+        </div>
+
          
         
 </asp:Content>

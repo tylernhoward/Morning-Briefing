@@ -4,7 +4,7 @@
 
 
 <h1><asp:Label ID="lblBan" Text="" runat="server" CssClass= "row justify-content-center"></asp:Label></h1>
-<div class="row justify-content-center"><i class="fa fa-sun-o" aria-hidden="true" style="margin: 20px; font-size:100pt;"></i></div>
+<div class="row justify-content-center"><i ID="timeIcon" class="fa fa-sun-o" aria-hidden="true" style="margin: 20px; font-size:100pt;" runat="server"></i></div>
 <h3 class="row justify-content-center">
     <asp:Label ID="lblTime" Text="" runat="server"></asp:Label>	
     &nbsp;<ucClock:Clock id="clock" runat="server"/>&nbsp;

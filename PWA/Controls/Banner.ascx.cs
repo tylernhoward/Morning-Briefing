@@ -12,24 +12,27 @@ namespace PWA.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             String timeCat;
-            String name = "Tyler";
-            String location = "Baltimore, MD";
-
+            String name = (string)Session["Fname"];
+            String location = (string)Session["City"];
+            timeIcon.Attributes["Class"] = "fa fa-sun-o";
             int currenthour = DateTime.Now.Hour;
             if(currenthour < 12 && currenthour > 3){
                 timeCat = "Morning";
+                timeIcon.Attributes["Class"] = "fa fa-sun-o";
             }
             else if (currenthour >= 12 && currenthour < 20){
                 timeCat = "Afternoon";
+                timeIcon.Attributes["Class"] = "fa fa-sun-o";
             }
             else{
                 timeCat = "Night";
+                timeIcon.Attributes["Class"] = "fa fa-moon-o";
             }
-
-
-            lblBan.Text = "Good " + timeCat + " " + name;
-            lblTime.Text = "The time is ";
-            lblLocation.Text = " in " + location;
+            lblBan.Text = GetGlobalResourceObject("WebResources", "Good").ToString() + " "
+                        + GetGlobalResourceObject("WebResources", timeCat).ToString() + " "
+                        + name;
+            lblTime.Text = GetGlobalResourceObject("WebResources", "Time").ToString();
+            if(location!=null)lblLocation.Text = GetGlobalResourceObject("WebResources", "In").ToString() + " " + location;
          }
     }
 }

@@ -15,8 +15,85 @@ namespace PWA.Pages
         
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["Id"]==null) Response.Redirect("~/Pages/Login.aspx", true);
+            refresh();
+                
         }
+        protected void Add_Todo(object sender, EventArgs e)
+        {
+            using (PWAEntities entities = new PWAEntities())
+            {
+                tblTask task = new tblTask();
+                task.userId = (int)Session["Id"];
+                task.DateSet = DateTime.Now.Date;
+                task.Category = todocategory.Text;
+                task.Title = todotitle.Text;
+                task.Content = todocontent.Text;
+                task.Complete = 0;
+                entities.tblTasks.Add(task);
+                entities.SaveChanges();
+            }
+            refresh();
+        }
+        protected void Delete_Todo(object sender, EventArgs e)
+        {
+            LinkButton button = (LinkButton)sender;
+            int taskId = Convert.ToInt32(button.CommandArgument.ToString());
+            
+            using (PWAEntities entities = new PWAEntities())
+            {
+                var resp = from t in entities.tblTasks where t.Id == taskId select t;
+                if (resp != null)
+                {
+                    var task = resp.ToList();
+                    if (task.Count == 1)
+                    {
+                        entities.tblTasks.Remove(task[0]);
+                        entities.SaveChanges();
+                    }
+                }
+               
+            }
+            refresh();
+        }
+        /*protected void Complete_Todo(object sender, EventArgs e)
+        {
+            LinkButton button = (LinkButton)sender;
+            int taskId = Convert.ToInt32(button.CommandArgument.ToString());
+
+            using (PWAEntities entities = new PWAEntities())
+            {
+                var resp = from t in entities.tblTasks where t.Id == taskId select t;
+                if (resp != null)
+                {
+                    var task = resp.ToList();
+                    if (task.Count == 1)
+                    {
+                        task[0].Complete = Convert.ToBoolean(task[0].Complete);
+                        entities.tblTasks.Remove(task[0]);
+                        entities.SaveChanges();
+                    }
+                }
+
+            }
+            refresh();
+        }*/
+
+        private void refresh()
+        {
+            using (PWAEntities entities = new PWAEntities())
+            {
+                var resp = from t in entities.SPGetTasksForUser((int)Session["Id"]) select t;
+                if (resp != null)
+                {
+                    var tasks = resp.ToList();
+                    TaskGrid.DataSource = tasks;
+                    TaskGrid.DataBind();
+
+                }
+            }
+        }
+
         protected void ZedGraphWeb1_RenderGraph(ZedGraphWeb webObject, Graphics g, MasterPane pane)
         {
             //GraphPane class came from the ZedGraph DLL

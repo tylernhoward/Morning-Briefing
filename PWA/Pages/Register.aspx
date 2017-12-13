@@ -45,8 +45,8 @@
                      ErrorMessage="* You must fill in this field" Display="dynamic" />
 					<asp:RegularExpressionValidator id="valRegExDate" runat="server"
                      ControlToValidate="txtDOB"
-                     ValidationExpression="\d\d\/\d\d\/\d\d"
-                     ErrorMessage="* Not valid format. (MM/DD/YY)"
+                     ValidationExpression="\d\d\/\d\d\/\d\d\d\d"
+                     ErrorMessage="* Not valid format. (MM/DD/YYYY)"
                      display="dynamic">
                     </asp:RegularExpressionValidator>
 
@@ -152,6 +152,7 @@
                      ErrorMessage="* You must fill in this field" Display="dynamic" />
                </td>
             </tr>
+             
 			<tr>
                 <td><asp:Label id="lblCountry" Style= "color:Black" Text="Country" runat="server"/></td>
 				<td>
@@ -173,6 +174,7 @@
         </asp:Panel>
 	</div>
 		
-	     
-        <asp:Button Text="Register" ID="registerBtn" OnClick="Submit_Click" CssClass="row mx-auto" runat="server" />
+	          <div class ="text-center row mx-auto justify-content-center">
+                <asp:Button Text="Register" ID="registerBtn" OnClick="Submit_Click" CssClass="row text-center btn btn-success" runat="server" />
+             </div>
 </asp:Content>

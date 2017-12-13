@@ -14,40 +14,60 @@ namespace PWA.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //The first time the page loads is not a postback
+            if(Session["Id"] == null)
+            {
+                Response.Redirect("~/Pages/Login.aspx", true);
+            }
             if (!IsPostBack)
             {
                 User u = new User();
-                u.firstName = "Tyler";
-                u.lastName = "Howard";
-                u.address.mailing_address = "8000 York Road";
-                u.address.country = "USA";
-                u.address.city = "Baltimore";
-                u.address.state = "Maryland";
+                u.firstName = (string)Session["Fname"];
+                u.lastName = (string)Session["Lname"];
+                u.address.mailing_address = (string)Session["Address"];
+                u.address.country = (string)Session["Country"];
+                u.address.city = (string)Session["City"];
+                u.address.suburb = (string)Session["Suburb"];
                 txtFname.Text = u.firstName;
                 txtLName.Text = u.lastName;
                 txtAdd1.Text = u.address.mailing_address;
                 txtCity.Text = u.address.city;
                 txtCountry.Text = u.address.country;
-                txtState.Text = u.address.state;
-                JavaScriptSerializer JSS = new JavaScriptSerializer();
-                string JSONObject = JSS.Serialize(u);
+                txtSuburb.Text = u.address.suburb;
+                ddNews.Text = (string)Session["News"];
             }
-            else
-            {   HttpCookie JSON = Request.Cookies.Get("JSON");
-                if (JSON != null)
-                {
-                    JavaScriptSerializer JSS = new JavaScriptSerializer();
-                    User u = JSS.Deserialize<User>(JSON.Value);
-                    txtFname.Text = u.firstName;
-                    txtLName.Text = u.lastName;
-                    txtAdd1.Text = u.address.mailing_address;
-                    txtCity.Text = u.address.city;
-                    txtCountry.Text = u.address.country;
-                    txtState.Text = u.address.state;
-                }
 
-            }
+
+        }
+        protected void Submit_Click(object sender, EventArgs e)
+        {
+            Session["Fname"] = txtFname.Text;
+            Session["Lname"] = txtLName.Text;
+            Session["Address"] = txtAdd1.Text;
+            Session["Country"] = txtCountry.Text;
+            Session["City"] = txtCity.Text;
+            Session["Suburb"] = txtSuburb.Text;
+            Session["News"] = ddNews.Text;
+
+            /*using (PWAEntities entities = new PWAEntities())
+            {
+                var resp = from u in entities.tblUsers
+                           where u.Id == (int)Session["Id"]
+                           select u;
+
+                if (resp != null)
+                {
+                    var user = resp.ToList();
+                    if (user.Count == 1)
+                    {
+                        //Update database....
+                    }
+                }
+            }*/
+
+        }
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
         }
     }
 }

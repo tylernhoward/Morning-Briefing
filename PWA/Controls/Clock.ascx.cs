@@ -10,7 +10,7 @@ namespace PWA.Controls
         
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            String currenttime = DateTime.Now.ToLongTimeString();
+            String currenttime = DateTime.Now.ToString("hh:mm:ss");
             lblClockTime.Text = currenttime;
         }
 
